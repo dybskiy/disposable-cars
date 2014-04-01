@@ -46,7 +46,7 @@ App.prototype.startLoading = function() {
         if (!thiz.hasLoaded) rotate();
       });
   };
-  
+
   rotate();
   this.load();
 };
@@ -132,7 +132,7 @@ App.prototype.loadData = function(callback) {
   callback = callback || function() {};
 
   var script = document.createElement('script');
-  script.src = 'http://my-s3-bukkit.s3.amazonaws.com/cars.js';
+  script.src = './cars.js';
   script.type = 'text/javascript';
   script.onload = callback;
   // load it up

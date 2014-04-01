@@ -25,7 +25,7 @@ Date.prototype.clearTime = function() {
 
 var today = +new Date().clearTime();
 var aDay = 86400000;
-var nDays = 3;
+var nDays = 10;
 
 // go through the JSON and remove any coordinates that are older than nDays
 for (var car in cars) {
